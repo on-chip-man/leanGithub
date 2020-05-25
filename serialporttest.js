@@ -3,8 +3,8 @@ const dataSchema = require('./schema1.json');
 const Delimiter = require('@serialport/parser-delimiter')
 
 //Opening a Port
-var serialPort = new SerialPort('COM12', {
-    baudRate : 230400,
+var serialPort = new SerialPort('COM3', {
+    baudRate : 115200,
     autoOpen:false
 });
 serialPort.open(function (err) {
